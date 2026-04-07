@@ -61,7 +61,7 @@ const locaties = [
   { id: 57, lat: 66.960611, lon: 29.186333, name: "Vanha Salla prison camp", description: "Duits Stalag 309." },
   { id: 58, lat: 67.288833, lon: 28.0434, name: "Saunakangas garrison", description: "Fins garnizoen." },
   { id: 59, lat: 66.71312, lon: 27.4314, name: "Volunteer Fire-Brigade House", description: "Gebruikt door Russen, Finnen, Duitsers." },
-  { id: 60, lat: 66.89915, lon: 28.983099, name: "Mogelijke posities", description: "Geen beschrijving." }
+  { id: 60, lat: 66.89915, lon: 28.983099, name: "Mogelijke posities", description: "Geen beschrijving." },
   { id: 61, lat: 66.99702, lon: 29.0656, name: "Mogelijke posities", description: "Geen beschrijving." },
   { id: 62, lat: 66.929028, lon: 29.609472, name: "Kairala bottleneck", description: "Zwaar slagveld Winteroorlog + 1941." },
   { id: 63, lat: 66.52059, lon: 29.47005, name: "Mogelijke posities", description: "Geen beschrijving." },
@@ -103,7 +103,7 @@ const locaties = [
   { id: 116, lat: 66.94177, lon: 29.019431, name: "Kelloselkä border crossing", description: "Grenspost." },
   { id: 117, lat: 66.816283, lon: 28.570733, name: "Paikanselkä battle area", description: "Winteroorlog frontlijn." },
   { id: 118, lat: 67.29211, lon: 28.16838, name: "Savukoski war heroes", description: "Monument voor gevallenen." },
-  { id: 120, lat: 66.661854, lon: 28.04728, name: "Battle of Ahoniemi", description: "Winteroorlog slag; 200 Sovjet doden." }
+  { id: 120, lat: 66.661854, lon: 28.04728, name: "Battle of Ahoniemi", description: "Winteroorlog slag; 200 Sovjet doden." },
   { id: 121, lat: 66.661854, lon: 28.04728, name: "Battle of Ahoniemi", description: "Winteroorlog: Finnen flankeren Sovjet I/596 IR; 200+ Sovjet doden." },
 
   // Samengevoegd Kemijärvi-cluster → 1 marker
