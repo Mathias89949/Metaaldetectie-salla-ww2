@@ -20,11 +20,11 @@ const sat = L.tileLayer(
     { maxZoom: 19 }
 );
 
-// Hillshade overlay (Stadia)
+// Hillshade (OpenTopoMap – gratis, geen API-key)
 const hillshade = L.tileLayer(
-    'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png',
+    'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
     {
-        opacity: 0.4,
+        opacity: 0.5,
         zIndex: 999
     }
 );
@@ -111,3 +111,4 @@ document.getElementById("hillshadeToggle").onchange = e => {
 document.getElementById("hillshadeSlider").oninput = e => {
     hillshade.setOpacity(e.target.value);
 };
+
