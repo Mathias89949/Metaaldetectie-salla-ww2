@@ -20,13 +20,14 @@ const sat = L.tileLayer(
     { maxZoom: 19 }
 );
 
-// Hillshade (Stamen Terrain – transparant, werkt zonder API-key)
+// Hillshade (ArcGIS – echte hillshade, gratis, geen API-key)
 const hillshade = L.tileLayer(
-    'https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}.jpg',
+    'https://tiles.arcgis.com/tiles/P3ePLMYs2RVChkJx/arcgis/rest/services/World_Hillshade/MapServer/tile/{z}/{x}/{y}',
     {
-        opacity: 0.4,
+        opacity: 0.5,
         zIndex: 999
     }
+
 );
 
 // Standaardlagen activeren
