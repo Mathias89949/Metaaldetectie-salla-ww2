@@ -14,17 +14,17 @@ const osm = L.tileLayer(
     { maxZoom: 19 }
 );
 
-// Satelliet (ArcGIS – werkt perfect op GitHub Pages)
+// Satelliet (ArcGIS)
 const sat = L.tileLayer(
     'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{x}/{y}',
     { maxZoom: 19 }
 );
 
-// Hillshade (OpenTopoMap – gratis, geen API-key)
+// Hillshade (Stamen Terrain – transparant, werkt zonder API-key)
 const hillshade = L.tileLayer(
-    'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    'https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}.jpg',
     {
-        opacity: 0.5,
+        opacity: 0.4,
         zIndex: 999
     }
 );
@@ -35,7 +35,7 @@ hillshade.addTo(map);
 
 
 // --------------------------------------
-// Iconen (lokaal)
+// Iconen
 // --------------------------------------
 const redStarIcon = L.icon({
     iconUrl: 'red-star.png',
@@ -111,4 +111,5 @@ document.getElementById("hillshadeToggle").onchange = e => {
 document.getElementById("hillshadeSlider").oninput = e => {
     hillshade.setOpacity(e.target.value);
 };
+
 
